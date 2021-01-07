@@ -144,8 +144,8 @@
               //set popup text
               //You can adjust the values of the popup to match the headers of your CSV.
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-              var description = `<h3>` + e.features[0].properties.Name + `</h3>` + `<h4>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.Address + `</h4>` + `<h4>` + `<b>` + `Phone: ` + `</b>` + e.features[0].properties.Phone + `</h4>` + `<h4>` + `<b>` +
-              `Website: ` + `</b>` +'<a href="' + e.features[0].properties.OrgURL + '" target="_blank">'+ e.features[0].properties.OrgURL +'</a>' + `</h4>` + `<h4>` + `<b>` + `Schedule: ` + `</b>` +'<a href="' + e.features[0].properties.ScheduleURL + '" target="_blank">'+ e.features[0].properties.ScheduleURL +'</a>' + `</h4>`;
+              var description = `<h3>` + e.features[0].properties.Name + `</h3>` + `<h4>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.Address + `</h4>` + `<h4>` + `<b>` + `Phone: ` + `</b>` + '<a href="tel:' + e.features[0].properties.Phone + '" target="_blank">' + e.features[0].properties.Phone +'</a>' + `</h4>` + `<h4>` + `<b>` +
+              `Website: ` + `</b>` + '<a href="' + e.features[0].properties.OrgURL + '" target="_blank">' + e.features[0].properties.OrgURL +'</a>' + `</h4>` + `<h4>` + `<b>` + `Schedule: ` + `</b>` +'<a href="' + e.features[0].properties.ScheduleURL + '" target="_blank">'+ e.features[0].properties.ScheduleURL +'</a>' + `</h4>`;
 
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
